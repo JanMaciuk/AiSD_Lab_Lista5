@@ -18,7 +18,7 @@ public class ListStack<E> {
     }
     
     public void push(E elem) {
-        list.add(0,elem);
+        list.add(elem);
     }
     
     public int size() {
