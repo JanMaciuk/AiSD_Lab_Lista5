@@ -112,6 +112,9 @@ public class Main {
                 pracownik.stanowisko = stanowisko;
                 pracownik.pensja = pensja;
                 pracownik.staz = staz;
+                pracownik.premia = 0;  //poniżej 10 lat pracy brak premii.
+                if (staz >= 10) { pracownik.premia = (float) (pensja * 0.1); }
+                if (staz >= 20) { pracownik.premia = (float) (pensja * 0.2); }
                 break;
             }
         }}

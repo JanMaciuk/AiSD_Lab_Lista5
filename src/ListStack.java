@@ -1,7 +1,7 @@
 import java.util.EmptyStackException;
 import java.util.List;
 
-public class ListStack<E> {
+public class ListStack<E> { //Implementacja stosu na liście jednokierunkowej
     List<E> list;
     public ListStack(){
         list = new OneWayLinkedListWithHead<>();
